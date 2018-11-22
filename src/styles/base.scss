@@ -6,33 +6,47 @@ $space:0,4,8,12,16,24,32,48,64,72,76;
 
 @each $i in $space {
   .m#{$i} {
-    margin: #{$i}px;
+    margin: #{$i}px !important;
   }
   .mt#{$i} {
-    margin-top: #{$i}px;
+    margin-top: #{$i}px !important;
   }
   .mb#{$i} {
-    margin-bottom: #{$i}px;
+    margin-bottom: #{$i}px !important;
   }
   .ml#{$i} {
-    margin-left: #{$i}px;
+    margin-left: #{$i}px !important;
   }
   .mr#{$i} {
-    margin-right: #{$i}px;
+    margin-right: #{$i}px !important;
   }
   .p#{$i} {
-    padding: #{$i}px;
+    padding: #{$i}px !important;
   }
   .pt#{$i} {
-    padding-top: #{$i}px;
+    padding-top: #{$i}px !important;
   }
   .pb#{$i} {
-    padding-bottom: #{$i}px;
+    padding-bottom: #{$i}px !important;
   }
   .pl#{$i} {
-    padding-left: #{$i}px;
+    padding-left: #{$i}px !important;
   }
   .pr#{$i} {
-    padding-right: #{$i}px;
+    padding-right: #{$i}px !important;
+  }
+}
+
+.no-result {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -75px 0 0 -74px;
+  img,span {
+    display: block;
+  }
+  span {
+    color: #666;
+    text-align: center;
   }
 }

@@ -4,6 +4,8 @@
   height: 100%;
 }
 
+$perfix:'webkit', 'moz', 'ms';
+
 body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,form,input,button,textarea{margin:0;padding:0;}
 article,
 aside,
@@ -11,6 +13,7 @@ details,
 figcaption,
 figure,
 footer,
+p,
 header,
 hgroup,
 main,
@@ -22,6 +25,7 @@ summary {
 }
 html, body, #app, #root {
   @extend %full;
+  overflow-x: hidden;
 }
 
 body {
@@ -39,4 +43,12 @@ body {
 
 a {
   text-decoration: none;
+}
+@each $p in $perfix {
+  input::-#{$p}-input-placeholder {
+    color:#bbb;
+  }
+  textarea::-#{$p}-input-placeholder {
+    color:#bbb;
+  }
 }
